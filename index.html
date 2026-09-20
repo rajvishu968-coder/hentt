@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Royal Restaurant | Fine Dining in Bareilly</title>
+    <meta
+      name="description"
+      content="El Royal Restaurant — a premium fine-dining destination at C 907, Rajendra Nagar, Bareilly. Reserve your table."
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="grain"></div>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+
+    <nav class="nav" id="nav">
+      <a class="logo" href="#top">
+        <span class="logo-mark">ER</span>
+        <span class="logo-text">
+          <em>El Royal</em>
+          <small>Restaurant</small>
+        </span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#layout">3D Hall</a></li>
+        <li><a href="#cuisine">Cuisine</a></li>
+        <li><a href="#interior">Interior</a></li>
+        <li><a href="#reserve">Reserve</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+      <a class="nav-cta" href="#reserve">Book a Table</a>
+    </nav>
+
+    <header class="hero" id="top">
+      <div class="hero-stage" id="heroStage"></div>
+      <div class="hero-veil"></div>
+      <div class="hero-ornament left"></div>
+      <div class="hero-ornament right"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Bareilly · Fine Dining</p>
+        <h1>
+          <span>El Royal</span>
+          <span class="script">Restaurant</span>
+        </h1>
+        <p class="hero-lead">
+          An intimate hall of crimson velvet, marble light, and royal flavour —
+          crafted for evenings that linger.
+        </p>
+        <div class="hero-actions">
+          <a class="btn gold" href="#reserve">Reserve Tonight</a>
+          <a class="btn ghost" href="#layout">Explore 3D Hall</a>
+        </div>
+        <div class="hero-meta">
+          <div>
+            <small>Address</small>
+            <strong>C 907, Rajendra Nagar</strong>
+          </div>
+          <div>
+            <small>City</small>
+            <strong>Bareilly, U.P. 243122</strong>
+          </div>
+          <div>
+            <small>Call</small>
+            <strong><a href="tel:08791224113">08791 224113</a></strong>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-hint">
+        <span>Scroll</span>
+        <i></i>
+      </div>
+    </header>
+
+    <section class="ribbon">
+      <div class="ribbon-track">
+        <span>Royal Hospitality</span><i></i>
+        <span>Crimson Velvet Booths</span><i></i>
+        <span>Chef Signature Plates</span><i></i>
+        <span>Live Tandoor</span><i></i>
+        <span>Private Evenings</span><i></i>
+        <span>Rajendra Nagar, Bareilly</span><i></i>
+        <span>Royal Hospitality</span><i></i>
+        <span>Crimson Velvet Booths</span><i></i>
+        <span>Chef Signature Plates</span><i></i>
+        <span>Live Tandoor</span><i></i>
+        <span>Private Evenings</span><i></i>
+        <span>Rajendra Nagar, Bareilly</span><i></i>
+      </div>
+    </section>
+
+    <section class="experience" id="experience">
+      <div class="section-head">
+        <p class="eyebrow">The House</p>
+        <h2>A dining room composed like a jewel.</h2>
+        <p>
+          Arched neon alcoves, a glowing bar, and plush crimson seating —
+          El Royal is designed as a theatre of taste in the heart of Bareilly.
+        </p>
+      </div>
+      <div class="exp-grid">
+        <article class="exp-card tilt">
+          <span class="num">01</span>
+          <h3>Velvet Salon</h3>
+          <p>
+            Deep red banquettes and emerald booths wrap marble tables — a
+            hushed, candle-warm setting for unhurried conversation.
+          </p>
+        </article>
+        <article class="exp-card tilt featured">
+          <span class="num">02</span>
+          <h3>The Illuminated Bar</h3>
+          <p>
+            Crystal pendants, gold glassware, and a softly lit counter —
+            the house centrepiece for cocktails and slow evenings.
+          </p>
+        </article>
+        <article class="exp-card tilt">
+          <span class="num">03</span>
+          <h3>Chef Atelier</h3>
+          <p>
+            Tandoor fire, chilli-kissed plates, and sculpted garnishes —
+            North Indian classics presented with royal precision.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="layout" id="layout">
+      <div class="layout-copy">
+        <p class="eyebrow">Interactive Hall</p>
+        <h2>Walk the 3D dining layout.</h2>
+        <p>
+          Drag to orbit. Scroll to approach. Select a table to reserve it —
+          crimson chairs, ivory linen, and the glow of our arched salon.
+        </p>
+        <ul class="legend">
+          <li><i class="dot red"></i> Available table</li>
+          <li><i class="dot gold"></i> Selected table</li>
+          <li><i class="dot dim"></i> Reserved</li>
+        </ul>
+        <div class="layout-stats">
+          <div><strong id="tableCount">12</strong><span>Tables</span></div>
+          <div><strong>48</strong><span>Covers</span></div>
+          <div><strong>2</strong><span>Private corners</span></div>
+        </div>
+        <p class="selected-note" id="selectedNote">Hover a table to preview seating.</p>
+      </div>
+      <div class="layout-stage wrap-3d">
+        <canvas id="hall"></canvas>
+        <div class="stage-hint">Drag to orbit · Scroll to zoom</div>
+      </div>
+    </section>
+
+    <section class="cuisine" id="cuisine">
+      <div class="section-head light">
+        <p class="eyebrow">Signatures</p>
+        <h2>Plates that wear the house colours.</h2>
+        <p>From the tandoor and the wok — photographed in our kitchen.</p>
+      </div>
+      <div class="menu-stage">
+        <article class="dish dish-a" data-tilt>
+          <div class="dish-frame">
+            <img src="/images/paneer-tikka.jpg" alt="Paneer tikka with naan, dal and chutney" />
+            <div class="dish-shine"></div>
+          </div>
+          <div class="dish-meta">
+            <span class="tag">Tandoor</span>
+            <h3>Royal Paneer Tikka</h3>
+            <p>
+              Charred cottage cheese on herb naan, served with saffron dal,
+              mint chutney, and carved onion.
+            </p>
+            <em>House favourite</em>
+          </div>
+        </article>
+        <article class="dish dish-b" data-tilt>
+          <div class="dish-frame">
+            <img src="/images/chilli-dry.jpg" alt="Chilli dry plated on ceramic oval" />
+            <div class="dish-shine"></div>
+          </div>
+          <div class="dish-meta">
+            <span class="tag">Spice</span>
+            <h3>Crimson Chilli Dry</h3>
+            <p>
+              Dark-glazed bites with chilli, microgreens and edible petals —
+              a scarlet counterpoint to ivory porcelain.
+            </p>
+            <em>Chef's fire</em>
+          </div>
+        </article>
+        <article class="dish dish-c" data-tilt>
+          <div class="dish-frame">
+            <img src="/images/stir-fry.jpg" alt="Stir fry on a blue ceramic plate with rice nest" />
+            <div class="dish-shine"></div>
+          </div>
+          <div class="dish-meta">
+            <span class="tag">Wok</span>
+            <h3>Atelier Stir Fry</h3>
+            <p>
+              Glazed vegetables and crisp protein, finished with a rice-noodle
+              nest and saffron pearls.
+            </p>
+            <em>Seasonal plate</em>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="interior" id="interior">
+      <div class="interior-visual">
+        <div class="photo-3d">
+          <img src="/images/interior.jpg" alt="El Royal dining hall with crimson booths and illuminated bar" />
+          <div class="photo-frame"></div>
+        </div>
+      </div>
+      <div class="interior-copy">
+        <p class="eyebrow">The Salon</p>
+        <h2>Crimson, ivory, and a wash of light.</h2>
+        <p>
+          White marble tables rest against velvet banquettes. Gothic arches
+          glow amethyst against cream walls. The bar is a lantern at the
+          far end of the hall — crystal, glass, and gold.
+        </p>
+        <ul class="interior-list">
+          <li>Hand-tufted crimson and emerald seating</li>
+          <li>Arched marble niches with ambient light</li>
+          <li>Warm oak floors and hanging gardens</li>
+          <li>A fully stocked illuminated bar</li>
+        </ul>
+        <a class="btn gold" href="#reserve">Dine in the hall</a>
+      </div>
+    </section>
+
+    <section class="reserve" id="reserve">
+      <div class="reserve-card">
+        <div class="reserve-copy">
+          <p class="eyebrow">Reservations</p>
+          <h2>Claim your table.</h2>
+          <p>
+            Evenings fill quickly. Share your details and we will confirm
+            your place in the salon.
+          </p>
+          <div class="reserve-phone">
+            <small>Prefer to call</small>
+            <a href="tel:08791224113">08791 224113</a>
+          </div>
+        </div>
+        <form class="reserve-form" id="reserveForm">
+          <label>
+            Full name
+            <input type="text" name="name" required placeholder="Your name" />
+          </label>
+          <label>
+            Phone
+            <input type="tel" name="phone" required placeholder="Mobile number" />
+          </label>
+          <div class="split">
+            <label>
+              Date
+              <input type="date" name="date" required />
+            </label>
+            <label>
+              Time
+              <select name="time" required>
+                <option value="19:00">19:00</option>
+                <option value="19:30">19:30</option>
+                <option value="20:00">20:00</option>
+                <option value="20:30">20:30</option>
+                <option value="21:00">21:00</option>
+                <option value="21:30">21:30</option>
+              </select>
+            </label>
+          </div>
+          <div class="split">
+            <label>
+              Guests
+              <select name="guests" required>
+                <option>2</option>
+                <option>3</option>
+                <option selected>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>8</option>
+              </select>
+            </label>
+            <label>
+              Table
+              <input type="text" name="table" id="tableField" placeholder="Any preferred" />
+            </label>
+          </div>
+          <label>
+            Note
+            <textarea name="note" rows="3" placeholder="Occasion, seating preference..."></textarea>
+          </label>
+          <button class="btn gold full" type="submit">Request Reservation</button>
+          <p class="form-ok" id="formOk" hidden>Thank you. Our host will confirm shortly.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="visit" id="visit">
+      <div class="visit-grid">
+        <article>
+          <small>Address</small>
+          <h3>C 907, Rajendra Nagar</h3>
+          <p>Bareilly, Uttar Pradesh 243122</p>
+          <a
+            class="map-link"
+            href="https://www.google.com/maps/search/?api=1&query=C+907+Rajendra+Nagar+Bareilly+243122"
+            target="_blank"
+            rel="noopener"
+            >Open in Maps</a
+          >
+        </article>
+        <article>
+          <small>Hours</small>
+          <h3>Open daily</h3>
+          <p>Lunch 12:00 – 15:30<br />Dinner 19:00 – 23:30</p>
+        </article>
+        <article>
+          <small>Host</small>
+          <h3>08791 224113</h3>
+          <p>Reservations &amp; private dining</p>
+          <a href="tel:08791224113">Call the house</a>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-brand">
+        <span class="logo-mark">ER</span>
+        <div>
+          <strong>El Royal Restaurant</strong>
+          <span>Rajendra Nagar, Bareilly</span>
+        </div>
+      </div>
+      <p>Crimson halls. Ivory linen. A royal table.</p>
+      <small>&copy; 2026 El Royal Restaurant. All rights reserved.</small>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
